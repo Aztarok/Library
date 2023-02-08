@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <div class="top">
+        <div class="topright-text">
+            <p>Personal Library</p>
+        </div>
+        <div class="haveYou">
+            <p>Have you read today?</p>
+        </div>
+        <div class="sign">
+            <button>Sign In</button>
+            <button>Login</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="content">
+            <div class="bookStorage" id="books">    
+                <button class="btn adding">Add Book</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="stats">
+                <div>
+                    <p>Your Reading Stats</p>
+                </div>
+                <div>
+                    <p>Books Started: </p>
+                    <p class="hidden">0</p>
+                </div>
+                <div>
+                    <p>Books Read: </p>
+                    <p class="hidden">0</p>
+                </div>
+                <div>
+                    <p>Date started: </p>
+                    <p class="hidden">0</p>
+                </div>
+                <div>
+                    <p>Favorite Author: </p>
+                    <p class="hidden">0</p>
+                </div>
+                <div>
+                    <p>Reading Streak: </p>
+                    <p class="hidden">0</p>
+                </div>
+            </div>
+        <div class="footer">
+
+        </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-form">
+                <h1 class="form-title"></h1>
+                <form class="add-book">
+                    <div class="input-field">
+                        <label for="book-title">Title:</label>
+                        <input type="text" name="book-title" id="book-title" class="modal-input" />   
+                    </div>
+                    <div class="input-field">
+                        <label for="book-author">Author:</label>
+                        <input type="text" name="book-author" id="book-author" class="modal-input" />   
+                    </div>
+                    <div class="input-field">
+                        <label for="book-pages">Pages:</label>
+                        <input type="number" min="0" name="book-pages" id="book-pages" class="modal-input" />   
+                    </div>
+                    <div class="input-field">
+                        <span class="modal-read">Read?</span>
+                        <label class="container">
+                            <input type="checkbox" name="book-red" id="book-read" class="checkmark" />
+                        </label>
+                    </div>
+                    <div class="submit-modal-form">
+                        <button type="submit" class="btn form-add-button">Add Book</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
